@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <h1> Hello </h1>
 <p>I'm a p tag!</p>
 <!-- This is a comment -->
@@ -5,15 +6,56 @@
 
 <main>
 
-  <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a>
+  <p>View more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
+  <!--Target (means open blank in the following location) blank (means open code in a new tab)-->
 
-  <img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+  <!--MAKING AN IMAGE INTO A LINK-->
+  <a href="#"><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
 
   <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
   <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
-  <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
-  <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+  
+  <div>
+    <ul>
+      <li>milk</li>
+      <li>cheese</li>
+    </ul>
 
+    <ol>
+      <li>sweet</li>
+      <li>sour</li>
+    </ol>
+  </div>
+  <!--USE FORM ACTION TO SUBMIT TYPES INPUT INTO A SERVER OR DB ONLINE-->  
+  <!--PLACEHOLDER FOR INPUT BOX-->
+  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <input type="text" required placeholder="this is placeholer text">
+    <!--'required means user cannot submit empty box'-->
+    <button type="submit">Submit</button>
+
+    <label for="indoor">
+      <input type="radio" value="indoor" name="indoor-outdoor">Indoor <!--value shows the value for the chosen option-->
+    </label>
+
+    <label for="outdoor">
+      <input type="radio" value="outdoor" name="indoor-outdoor">Outdoor
+    </label>
+    <!--THE NAME ATTRIBUTES HELPS DESELECT OTHER OPTIONS WHEN ONE IS CHOSEN-->
+    <!--ALL RELATED INPUTS SHOULD HAVE THE SAME NAME ATTRIBUTES-->
+
+    <label for="loving">
+      <input id="loving" type="checkbox" name="personality" checked>Loving <!--'checked picks this option by default'-->
+    </label>
+
+    <label for="funny">
+      <input id="funny" type="checkbox" name="personality">Funny
+    </label>
+
+    <label for="happy">
+      <input id="happy" type="checkbox" name="personality">Happy
+    </label>
+  </form>
 </main>
 
 <footer>Copyright Cat Photo App</footer>
+</html>
